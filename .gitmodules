@@ -10,3 +10,6 @@
 [submodule "AppDrivers/HTU21DF-Cube"]
 	path = AppDrivers/HTU21DF-Cube
 	url = https://github.com/tvlad1234/HTU21DF-Cube.git
+[submodule "AppDrivers/TMP102-Cube"]
+	path = AppDrivers/TMP102-Cube
+	url = https://github.com/tvlad1234/TMP102-Cube.git

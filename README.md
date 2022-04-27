@@ -3,7 +3,8 @@ This is an app for the [i2c Thing](https://github.com/tvlad1234/i2cThingTemplate
 ## Supported sensors:
 ### Environmental: 
 BMP085/180 (temperature and pressure) \
-HTU21DF (temperature and humidity)
+HTU21DF (temperature and humidity) \
+TMP102 (temperature)
 ### Inertial:
 MPU6050 (acceleration and angular velocity) \
 ADXL345 (acceleration)

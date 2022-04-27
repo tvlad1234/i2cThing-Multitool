@@ -15,6 +15,7 @@
 //Temperature sensors
 #define TEMP_BMP085 1
 #define TEMP_HTU21DF 2
+#define TEMP_TMP102 3
 
 //Atmospheric pressure sensors
 #define PRES_BMP085 1

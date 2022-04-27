@@ -4,6 +4,7 @@
 
 #include "bmp085.h"
 #include "htu21df.h"
+#include "tmp102.h"
 
 extern uint8_t numSensors;
 
@@ -41,6 +42,15 @@ void initEnvironmental()
             numSensors++;
         }
     }
+
+    if (tmpBegin(thingPort()))
+    {
+        if (!tempType)
+        {
+            tempType = TEMP_TMP102;
+            numSensors++;
+        }
+    }
 }
 
 void readTemp(float *t)
@@ -53,6 +63,10 @@ void readTemp(float *t)
 
     case TEMP_HTU21DF:
         *t = readHTUTemperature();
+        break;
+
+    case TEMP_TMP102:
+        *t = readTMPTemperature();
         break;
 
     default:
