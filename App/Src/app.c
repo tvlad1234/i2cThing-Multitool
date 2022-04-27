@@ -1,26 +1,21 @@
 #include "main.h"
 
-float c;
-char s[10];
+#include "imu.h"
+#include "environmental.h"
+
+#include "ui.h"
 
 int main(void)
 {
-    // Initialize thing
     thingInit();
 
-    // Infinite loop
+    initIMU();
+    initEnvironmental();
+
+    listSensors();
+
     while (1)
     {
-        clearDisplay();
-        setCursor(0, 0);
-
-        printFloat(c += 0.1, 1, s);
-        printf("%s\n", s);
-
-        if (readButton())
-            printf("Button pressed!\n");
-
-        flushDisplay();
-        HAL_Delay(100);
+        ui();
     }
 }

@@ -1,0 +1,12 @@
+[submodule "AppDrivers/ADXL345-Cube"]
+	path = AppDrivers/ADXL345-Cube
+	url = https://github.com/tvlad1234/ADXL345-Cube.git
+[submodule "AppDrivers/BMP085-Cube"]
+	path = AppDrivers/BMP085-Cube
+	url = https://github.com/tvlad1234/BMP085-Cube.git
+[submodule "AppDrivers/MPU6050-Cube"]
+	path = AppDrivers/MPU6050-Cube
+	url = https://github.com/tvlad1234/MPU6050-Cube.git
+[submodule "AppDrivers/HTU21DF-Cube"]
+	path = AppDrivers/HTU21DF-Cube
+	url = https://github.com/tvlad1234/HTU21DF-Cube.git

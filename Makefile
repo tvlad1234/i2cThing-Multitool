@@ -12,7 +12,7 @@
 # ------------------------------------------------
 
 # drivers
-APPDRIV = dummy
+APPDRIV = BMP085-Cube HTU21DF-Cube MPU6050-Cube ADXL345-Cube
 
 #other subdirectories
 SUBDIRS = App
